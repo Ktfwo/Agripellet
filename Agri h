@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agripellet Ethiopia</title>
+    <style>
+        /* Basic Reset */
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: Arial, sans-serif; }
+        body { line-height: 1.6; color: #333; }
+        a { text-decoration: none; color: inherit; }
+
+        /* Header */
+        header {
+            background: #4CAF50;
+            color: white;
+            padding: 20px 10%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        header img { height: 50px; }
+        nav a { margin-left: 20px; font-weight: bold; }
+
+        /* Hero Section */
+        .hero {
+            background: url('hero-placeholder.jpg') center/cover no-repeat;
+            height: 70vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: white;
+        }
+        .hero h1 { font-size: 3rem; margin-bottom: 10px; }
+        .hero p { font-size: 1.2rem; margin-bottom: 20px; }
+        .hero button {
+            padding: 10px 20px;
+            background: #fff;
+            color: #4CAF50;
+            border: none;
+            font-size: 1rem;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        /* Sections */
+        section { padding: 60px 10%; }
+        h2 { font-size: 2rem; color: #4CAF50; margin-bottom: 20px; }
+        p { margin-bottom: 15px; }
+        .two-columns { display: flex; flex-wrap: wrap; gap: 20px; }
+        .column { flex: 1; min-width: 300px; }
+
+        /* Table */
+        table { width: 100%; border-collapse: collapse; margin-top: 20px; }
+        table, th, td { border: 1px solid #ddd; }
+        th, td { padding: 12px; text-align: center; }
+        th { background: #4CAF50; color: white; }
+
+        /* Footer */
+        footer {
+            background: #333;
+            color: white;
+            padding: 30px 10%;
+            text-align: center;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            header { flex-direction: column; text-align: center; }
+            nav { margin-top: 10px; }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <img src="logo-placeholder.png" alt="Agripellet Ethiopia Logo">
+        <nav>
+            <a href="#about">About</a>
+            <a href="#products">Products</a>
+            <a href="#market">Market</a>
+            <a href="#operations">Operations</a>
+            <a href="#technology">Technology</a>
+            <a href="#finance">Finance</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <h1>Agripellet Ethiopia</h1>
+        <p>Sustainable Animal Feed & AI-Driven Agricultural Solutions</p>
+        <button onclick="document.getElementById('contact').scrollIntoView();">Contact Us</button>
+    </section>
+
+    <!-- Executive Summary -->
+    <section id="about">
+        <h2>Executive Summary</h2>
+        <p><strong>Mission:</strong> Sustainable animal feed production for Ethiopian farmers.</p>
+        <p><strong>Vision:</strong> Leading East Africa in AI-driven agricultural solutions.</p>
+        <p><strong>Target Market & Growth Opportunity:</strong> Farmers, cooperatives, distributors, and diaspora investors.</p>
+        <p><strong>Competitive Advantage:</strong> AI-driven data, waste collection network, job creation.</p>
+    </section>
+
+    <!-- Business Description -->
+    <section id="products">
+        <h2>Business Description</h2>
+        <div class="two-columns">
+            <div class="column">
+                <h3>Pellet Production Process</h3>
+                <p>Step-by-step production from raw materials to high-quality animal feed pellets.</p>
+            </div>
+            <div class="column">
+                <h3>Raw Materials</h3>
+                <p>Locally sourced agricultural residues and waste.</p>
+            </div>
+            <div class="column">
+                <h3>Products & Services</h3>
+                <ul>
+                    <li>Animal feed pellets</li>
+                    <li>Waste collection services</li>
+                    <li>AI & data services for farmers</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Market Analysis -->
+    <section id="market">
+        <h2>Market Analysis</h2>
+        <p><strong>Market Size:</strong> Ethiopian & East African feed industry growth trends.</p>
+        <p><strong>Target Customers:</strong> Farmers, cooperatives, distributors.</p>
+        <p><strong>Trends:</strong> Sustainable agriculture, high demand for animal feed.</p>
+    </section>
+
+    <!-- Competitive Analysis -->
+    <section id="competition">
+        <h2>Competitive Analysis</h2>
+        <p>Comparison with existing feed companies and small farms. Unique value: AI insights, waste collection, diaspora investment.</p>
+    </section>
+
+    <!-- Operations Plan -->
+    <section id="operations">
+        <h2>Operations Plan</h2>
+        <div class="two-columns">
+            <div class="column">
+                <h3>Location & Production Capacity</h3>
+                <p>Main production site with scalable capacity.</p>
+            </div>
+            <div class="column">
+                <h3>Equipment</h3>
+                <ul>
+                    <li>Pellet machines</li>
+                    <li>Grinders & Mixers</li>
+                    <li>Storage facilities</li>
+                </ul>
+            </div>
+            <div class="column">
+                <h3>Staffing & Training</h3>
+                <p>Skilled operators and ongoing training programs.</p>
+            </div>
+        </div>
+        <p>Partnerships with cooperatives, municipalities, and diaspora investors.</p>
+    </section>
+
+    <!-- Marketing & Sales Strategy -->
+    <section id="marketing">
+        <h2>Marketing & Sales Strategy</h2>
+        <ul>
+            <li>Farmer outreach & training</li>
+            <li>B2B partnerships with distributors & NGOs</li>
+            <li>Digital platform for diaspora investment</li>
+            <li>Branding & storytelling: African innovation</li>
+        </ul>
+    </section>
+
+    <!-- Technology Integration -->
+    <section id="technology">
+        <h2>Technology Integration</h2>
+        <ul>
+            <li>IoT & AI sensors for production efficiency</li>
+            <li>Data collection for feed formulation</li>
+            <li>Online platform for tracking & reporting impact</li>
+        </ul>
+    </section>
+
+    <!-- Financial Plan -->
+    <section id="finance">
+        <h2>Financial Plan</h2>
+        <table>
+            <tr>
+                <th>Item</th>
+                <th>Year 1 (ETB)</th>
+                <th>Year 2 (ETB)</th>
+                <th>Year 3 (ETB)</th>
+            </tr>
+            <tr>
+                <td>Startup Costs</td>
+                <td>1,500,000</td>
+                <td>—</td>
+                <td>—</td>
+            </tr>
+            <tr>
+                <td>Monthly Expenses</td>
+                <td>150,000</td>
+                <td>180,000</td>
+                <td>210,000</td>
+            </tr>
+            <tr>
+                <td>Annual Expenses</td>
+                <td>1,800,000</td>
+                <td>2,160,000</td>
+                <td>2,520,000</td>
+            </tr>
+            <tr>
+                <td>Revenue</td>
+                <td>2,400,000</td>
+                <td>3,600,000</td>
+                <td>4,800,000</td>
+            </tr>
+            <tr>
+                <td>Profit</td>
+                <td>600,000</td>
+                <td>1,440,000</td>
+                <td>2,280,000</td>
+            </tr>
+        </table>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p>Phone: +251 982 448 495</p>
+        <p>Email: <a href="mailto:agripelletethiopia@gmail.com">agripelletethiopia@gmail.com</a></p>
+        <form>
+            <input type="text" placeholder="Your Name" required style="padding:10px; width:100%; margin-bottom:10px;">
+            <input type="email" placeholder="Your Email" required style="padding:10px; width:100%; margin-bottom:10px;">
+            <textarea placeholder="Message" required style="padding:10px; width:100%; margin-bottom:10px;"></textarea>
+            <button type="submit" style="padding:10px 20px; background:#4CAF50; color:white; border:none; cursor:pointer;">Send Message</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        &copy; 2025 Agripellet Ethiopia | Phone: +251 982 448 495 | Email: agripelletethiopia@gmail.com
+    </footer>
+
+</body>
+</html>
